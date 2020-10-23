@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extends</title>
+</head>
+
+<body>
+    <script>
+        //Object duoc tao tu Class
+        class Person {
+            name;
+            age;
+            address;
+            speak;
+
+            constructor (name, age, address,speak) {
+                this.name = name;
+                this.age = age;
+                this.address = address;
+                this.speak = speak;
+            }
+        }
+
+        class Boy extends Person {
+            sex;
+            strength;
+
+            constructor(name, age, address, speak, sex, strength) {
+                super(name, age, address, speak);
+                this.sex = sex;
+                this.strength = strength;
+            }
+
+            hit() {
+                console.log(10);
+            }
+
+        }
+
+        let Huy = new Boy ('Huy', 16, 'Hanoi', 'abcd1234', 'Boy', true);
+        console.log(Huy)
+
+        class Girl extends Person {
+            sex;
+            beautiful;
+
+            constructor(name, age, address, speak, sex, beautiful) {
+                super(name, age, address, speak);
+                this.sex = 'female';
+                this.beautiful = beautiful;
+            }
+
+            cook() {
+                console.log(10);
+            }
+
+        }
+
+        let Minh = new Girl ('Minh', 15, 'Hanoi', 'abcd1234', 'Girl', false);
+        console.log(Minh)
+
+        class GoodBoy extends Boy {
+            poor;
+            
+            constructor(name, age, address, speak, sex, strength, poor) {
+                super(name, age, address, speak, sex, strength);
+                this.poor = poor;
+            }
+        }
+
+        class BadBoy extends Boy {
+            rich;
+            
+            constructor(name, age, address, speak, sex, strength, rich) {
+                super(name, age, address, speak, sex, strength);
+                this.rich = rich;
+            }
+        }
+
+        class GoodGirl extends Girl {
+            poor;
+            
+            constructor(name, age, address, speak, sex, beautiful, poor) {
+                super(name, age, address, speak, sex, beautiful);
+                this.poor = poor;
+            }
+        }
+
+        class BadGirl extends Girl {
+            rich;
+            
+            constructor(name, age, address, speak, sex, beautiful, rich) {
+                super(name, age, address, speak, sex, beautiful);
+                this.rich = rich;
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
