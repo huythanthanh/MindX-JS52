@@ -1,0 +1,11 @@
+Web component là tập hợp các Web APIs cho phép chúng ta tạo ra một thẻ HTML riêng, mang các đặc tính riêng, đóng gói, có thể tái sử dụng. Web component được xây dựng trên chuẩn web hiện tại, vì thế đang (và sẽ) có thể hoạt động trên tất cả các trình duyệt, có thể tương thích với tất cả các library và framework Javascript có thể làm việc với HTML. Để dễ tưởng tượng thì nó giống như component của Angular hay React vậy, có điều component này phạm vi sử dụng là trình duyệt luôn, chứ ko gói gọn ở phạm vi framework nữa.
+Thành phần: 
+Custom elements
+ta tạo ra element riêng với các tính chất và hành vi riêng để có thể dùng như các element mặc định ngoài UI.
+Shadow DOM
+tạo, đính kèm và đóng gói một cây DOM vào một custom element - cây DOM này render độc lập với cây DOM chính (window.document)
+điều khiển các chức năng liên quan
+đóng gói các tính năng và styling của cây DOM, tránh xung đột ra các DOM elements bên ngoài
+HTML templates:
+ <template> <slot>
+ create HTML template mà nội dung bên trong 2 thẻ này sẽ ko đc render trực tiếp ra bên ngoài mà chỉ có thể attach và sử dụng với shadow DOM
