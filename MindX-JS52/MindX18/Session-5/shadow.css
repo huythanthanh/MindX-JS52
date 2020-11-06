@@ -1,0 +1,21 @@
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.anime-container {
+    background-color: black;
+    border: 2px aqua solid;
+    margin-bottom: 20px;
+}
+
+.category,
+.name,
+.price,
+.chapter {
+    background-color: black;
+    text-transform: capitalize;
+    text-align: end;
+    margin-bottom: 5px;
+    height: 15px;
+}

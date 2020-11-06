@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            name;
+            gender;
+            species;
+            color;
+            legs;
+
+            constructor (name, gender, species, color, legs) {
+                this.name = name;
+                this.gender = gender;
+                this.species = species;
+                this.color = color;
+                this.legs = legs;
+                console.log(this)
+            }
+        }
+
+        let dogs = new Animal ('Dog', 'Male', 'Becgie', 'Brown', 4);
+        let birds = new Animal ('Bird', 'Female', 'Birdy', 'Yellow', 2);
+        let spider = new Animal ('Spider', 'Male', 'spiderman', 'red', 6);
+
+    </script>
+</body>
+</html>

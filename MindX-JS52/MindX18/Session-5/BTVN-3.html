@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-color: lightblue;
+            color: white;
+            margin-left: 300px;
+            width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* ShadowDOM CSS */
+        img {
+            width: 200px;
+            height: 300px;
+        }
+
+        .anime-container {
+            background-color: black;
+            border: 2px aqua solid;
+            margin-bottom: 20px;
+        }
+
+        .category,
+        .name,
+        .price,
+        .chapter {
+            background-color: black;
+            text-transform: capitalize;
+            text-align: end;
+            margin-bottom: 5px;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <anime-container image="https://pbs.twimg.com/media/EN450YtU4AA49Xb.jpg" category="actions"
+        name="anime" price="100$" chapters="123"></anime-container>
+
+</body>
+
+<template>
+    <link rel="stylesheet" href="./shadow.css">
+    <div class="anime-container">
+        <img src="" alt="">
+        <div class="wrapper-info">
+            <div class="category"></div>
+            <div class="name"></div>
+            <div class="chapter"></div>
+            <div class="price"></div>
+
+        </div>
+    </div>
+</template>
+
+<script src="./js/app.js"></script>
+
+</html>

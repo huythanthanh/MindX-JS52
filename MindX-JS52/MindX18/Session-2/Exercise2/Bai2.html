@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN-2</title>
+</head>
+
+<body>
+    <script>
+        class Company {
+            nameCompany;
+            establishedDate;
+            country;
+            businessType;
+            employees = [];
+
+            constructor (nameCompany, establishedDate, country, businessType, employees) {
+                this.nameCompany = nameCompany;
+                this.establishedDate = establishedDate;
+                this.country = country;
+                this.businessType = businessType;
+                this.employees = employees
+            }
+
+            showAllEmployees() {
+                console.log(this.employees)
+            }
+
+            showCEO() {
+
+            }
+
+            showManagers() {
+
+            }
+
+            showStaffs() {
+
+            }
+        }
+
+        class Employee {
+            nameEmplyee;
+            sex;
+            age;
+            address;
+
+            constructor (nameEmployee, sex, age, address) {
+                this.nameEmployee = nameEmployee;
+                this.sex = sex;
+                this.age = age;
+                this.address = address;
+            }
+
+            about() {
+                console.log(`${this.nameEmplyee}, ${this.age}, ${this.address}`)
+            }
+        }
+
+        class CEO extends Employee {
+            strategy;
+
+            constructor(nameEmployee, sex, age, address, strategy) {
+                super(nameEmployee, sex, age, address)
+                this.strategy = strategy;
+            }
+        }
+
+        class Manager extends Employee {
+            managementStyle;
+
+            constructor (nameEmployee, sex, age, address, managementStyle) {
+                super(nameEmployee, sex, age, address)
+                this.managementStyle = managementStyle;
+            }
+        }
+
+        class Staff extends Employee {
+            experience;
+
+            constructor (nameEmployee, sex, age, address, experience) {
+                super(nameEmployee, sex, age, address)
+                this.experience = experience;
+            }
+        }
+
+        let company = new Company("Huy Tran", 25 / 10 / 2020, "VietNam", "OOP", ['employees1', 'employees'])
+        console.log(company)
+
+        let ceo = new CEO ("")
+        console.log(ceo)
+
+        let mana = new Manager ("")
+
+        let st = new Staff ("")
+        
+    </script>
+</body>
+
+<!-- Xong roi chi can dien them info vao thoi... em fix met qua roi em xin phep khong dien a :(( -->
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class - Object</title>
+</head>
+
+<body>
+    <script>
+        //Object duoc tao tu Class
+        class Person {
+            name;
+            sex;
+            age;
+            slogan;
+
+            constructor (name, sex, age, slogan) {
+                this.name = name;
+                this.sex = sex;
+                this.age = age;
+                this.slogan = slogan;
+            }
+        }
+
+        class GoodBoy extends Person {
+            poor;
+
+            constructor(name, sex, age, slogan, poor) {
+                super(name, sex, age, slogan);
+                this.poor = poor;
+            }
+        }
+
+        class BigCityBoy extends Person {
+            rich;
+
+            constructor(name, sex, age, slogan, rich) {
+                super(name, sex, age, slogan);
+                this.poor = rich;
+            }
+        }
+
+        class YellowBoy extends Person {
+            amount;
+
+            constructor(name, sex, age, slogan, amount) {
+                super(name, sex, age, slogan);
+                this.poor = amount;
+            }
+        }
+
+
+        let Huy = new GoodBoy ('Huy', 'Boy', 16, 'abcd1234', false);
+        let Huy2 = new BigCityBoy ('Huy2', 'Boy2', 162, 'abcd', true);
+        let Huy3 = new YellowBoy ('Huy3', 'Boy3', 163, 'abcd3', 10);
+        console.log(Huy)
+        console.log(Huy2)
+        console.log(Huy3)
+            
+
+
+    </script>
+</body>
+
+</html>

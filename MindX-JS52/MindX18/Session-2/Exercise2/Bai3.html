@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN-3</title>
+</head>
+
+<body>
+    <script>
+        let check = {};
+
+        let input = prompt("Nhap vao day: ");
+        let nums = input.split(',').map(function (item) {
+            return Number(item);
+        });
+
+        for (let i = 0; i < nums.length; i++) {
+            if ( !check[nums[i]] ) {
+                check[nums[i]] = 1;
+            } 
+            else {
+                check[nums[i]]++;
+            }
+        }
+
+        console.log(check)
+
+        for (const key in check) {
+            if (check[key] === 1) {
+                console.log(key)
+            }
+        }
+    </script>
+</body>
+
+</html>

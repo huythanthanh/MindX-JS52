@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+
+<body>
+    <script>
+        //Object duoc tao tu Class
+        class Animal {
+            name;
+            gender;
+            species;
+            color;
+            legs;
+
+            constructor (name, gender, species, color, legs) {
+                this.name = name;
+                this.gender = gender;
+                this.species = species;
+                this.color = color;
+                this.legs = legs;
+                console.log(this)
+            }
+
+            speak() {
+                console.log(`${this.name} biet noi`);
+            }
+
+            walk() {
+                console.log(`con nay co ${this.legs} chan`);
+            }
+            
+        }
+
+        // let huy = new Person ('Huy Tran', 16, 'Ha Noi', 'Boy', false);
+        // huy.goTo('VietNam');
+        let dogs = new Animal ('Dog', 'Male', 'Becgie', 'Brown', 4);
+        dogs.speak()
+        dogs.walk()
+
+
+    </script>
+</body>
+
+</html>

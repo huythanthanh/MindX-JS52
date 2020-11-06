@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN 2</title>
+</head>
+
+<body>
+    <script>
+        const data = [
+            {
+                name: "Huy1",
+                phone: 113,
+                friends: ["mrB", "mrC"]
+            },
+
+            {
+                name: "Huy2",
+                phone: 114,
+                friends: ["mrA", "mrC"]
+            },
+
+            {
+                name: "Huy3",
+                phone: 115,
+                friends: ["mrB", "mrA"]
+            },
+            
+        ]
+
+        let x = Number(prompt("Nhap so dien thoai: "))
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].phone_number === x) {
+                console.log(`This is ${data[i].name}'s phone number and this is his friends ${data[i].friends}`);
+            } else {
+                console.log("This number doesn't exist");
+            }
+        }
+    </script>
+</body>
+
+</html>
