@@ -1,0 +1,29 @@
+- Ý tưởng
++ Tên đề tài : Project share stories
++ Đối tượng nhắm tới : Các lứa tuổi từ 18 - 60
++ Chức năng chính : đăng ký 
+                    đăng nhập
+                    Xem / Up stories
+                    Reaction lại story của người khác
+
+- Phân tích
++ Dữ liệu (Thực thể) : User : Người dùng : Tên, email, password
+                       Story : Nội dung, ngày tạo, người tạo
+                       Reaction: Ai react, story, loại react (haha, tim, like,...)
+
++ Chức năng : Xác định chức năng đấy tương tác với người dùng như thế nào
+              VD: Phân tích chức năng đăng ký :
+                    1. Bấm vào link đăng ký ---> Hiển thị form đăng ký 
+                    2. Người dùng nhập vào: tên / email, password, password comfirm,...
+                    3. Bấm vào nút "Đăng ký ": + Nếu nhập đủ thông tin: Kiểm tra email trùng 
+                                                                        ---> Lưu người dùng
+                                               + Nếu không đủ thông tin: window.alert lỗi
+                                               + Nếu password khác password comfirm ---> lỗi
+
+- Thiết kế : 
++ Thiết kế cho chức năng đăng ký :
+    Thiết kế giao diện, thuật toán 
+
+- Cài đặt
+- Test
+- Deploy 

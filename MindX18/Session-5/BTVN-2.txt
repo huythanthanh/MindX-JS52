@@ -1,0 +1,2 @@
+getElementBy...: chi chon cac yeu to dua tren the ten (VD: Id, Name, Class,..)
+querySelector: Co the su dung any selector mang lai su linh hoat va nang luong nhieu hon, nhung no con moi nen ho tro trinh duyet kem hon

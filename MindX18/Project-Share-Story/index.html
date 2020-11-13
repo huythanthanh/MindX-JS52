@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input-wrapper label="Tên đăng kí" type="text" error="Nhập vào tên đăng kí" value="hahahaha😁😁😁"></input-wrapper> -->
+    <register-form></register-form>
+</body>
+
+<template id="input-wrapper-template">
+    <link rel="stylesheet" href="./css/input-wrapper.css">
+    <div id="input-wrapper">
+        <input type="text" id="input-main" placeholder="Main Input">
+        <div id="input-error"></div>
+    </div>
+</template>
+
+<template id="register-form-template">
+    <link rel="stylesheet" href="./css/register-form.css">
+    <form id="register-form">
+        <h2>Đăng kí tài khoản</h2>
+        <input-wrapper id="name" label="Tên đăng kí" type="text"></input-wrapper>
+        <input-wrapper id="email" label="Email" type="email"></input-wrapper>
+        <input-wrapper id="password" label="Mật khẩu" type="password"></input-wrapper>
+        <input-wrapper id="password-confirmation" label="Xác nhận mật khẩu" type="password"></input-wrapper>
+        <button id="register-button">Đăng kí</button>
+    </form>
+</template>
+
+<script src="./js/app.js" type="module"></script>
+</html>
